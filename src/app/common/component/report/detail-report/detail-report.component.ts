@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-detail-report',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailReportComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  view(id) {
+    //this.router.navigate(['/', 'red-pill']);
+    console.log("view " + id)
+    this.router.navigate(['/ReportDetail/see', id]);
+  }
+
+  edit(id) {
+    console.log("edit " + id)
+    this.router.navigate(['ReportDetail','scan', id]);
+    
+  }
 }

@@ -17,8 +17,17 @@
         <a routerLink="/Report" routerLinkActive="active">Report</a>
       </li>
       <li>
-        <a routerLink="/ReportDetail" routerLinkActive="active">Report detail</a>
+        <a [routerLink]="['/ReportDetail']" routerLinkActive="active">Report detail</a>
       </li>
+      <!-- <li>
+        <a [routerLink]="['/ReportDetail', 20]" routerLinkActive="active">Report detail</a>
+      </li> -->
+      <!-- <li>
+        <a [routerLink]="['/ReportDetail',20,'/PageDetail1']" routerLinkActive="active">Page 1</a>
+      </li>
+      <li>
+        <a [routerLink]="['/ReportDetail/PageDetail2', 20]" routerLinkActive="active">Page 2</a>
+      </li> -->
       <li class="dropdown" dropdown>
         <!-- {1} -->
         <a dropdownToggle role="button">

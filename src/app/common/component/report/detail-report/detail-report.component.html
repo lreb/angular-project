@@ -1,3 +1,23 @@
 <p>
   detail-report works!
 </p>
+
+
+<li>
+  <a [routerLink]="['/','view',21]" routerLinkActive="active">view</a>
+</li>
+<li>
+  <a [routerLink]="['/','edit',20]" routerLinkActive="active">edit</a>
+</li>
+
+
+
+<li>
+  <a (click)="view(2)">view</a>
+</li>
+<li>
+  <a (click)="edit(3)">edit</a>
+</li>
+
+
+<router-outlet></router-outlet>
